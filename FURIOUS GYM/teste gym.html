@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURIOUS gym </title>
+    <link rel="stylesheet" href="estilo furious gym.css">
+
+    <script type="text/javascript">
+        var imagens        = new Array( 'SLIDE 1 - Furious gym.png', 'SLIDE 2 - Furious gym.png', 'SLIDE 3 - Furious gym.png');
+        var num_img    = 3;
+        var img_atual =0;
+        
+        function ChangeImg()
+        {
+            if (img_atual < (num_img - 1) )
+           {
+                img_atual = img_atual + 1;
+           }
+           else
+           {
+                img_atual = 0;
+           }
+            document["img_apoio"].src    = imagens[img_atual];
+           var x = setTimeout ("ChangeImg()", 9000);
+        }
+        </script>
+
+</head>
+<body onload="ChangeImg()">
+
+    <header>
+        <br>
+        <center><img src="HEADER - Fusion gym.png" id="cabecalho"></center>
+        <div id="search-bar">
+            <div id="search-bar">
+                <img src="fogo - Furious gym.png" alt="Minha Foto" id="profile-picture">
+                <input type="text" id="search-input" placeholder="Pesquisar...">
+                <img src="fogo - Furious gym.png" alt="Minha Foto" id="profile-picture">
+                <button class="search-button">Pesquisar</button>
+                <button class="buy-button">Comprar</button>
+                <button id="third-button">Botão 3</button>
+            </div>
+    </header>
+<br>
+    <center><img src="SLIDE 1 - Furious gym.png" id="produtonovo" name="img_apoio"></center>
+    
+    <main>
+
+        <div class="card">
+            <img src="Quick recovery  - Furious gym.png" alt="Produto 1">
+            <div class="card-contentquick">
+                <h2>QUICK RECOVERY <br> FURIOUS GYM</h2>
+                <p>Desenvolvido com uma fórmula única, o Quick recovery é a escolha definitiva para impulsionar seus treinos e otimizar seus resultados na academia.</p>
+                <p id="preco">Preço: $109.50</p>
+                <button class="buy-buttonquick">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="CREATINA - Furious gym.png" alt="Produto 1">
+            <div class="card-content">
+                <h2>Creatina <br> FURIOUS GYM</h2>
+                <p>Potencialize seus treinos com a Creatina Furious Gym, a escolha definitiva para maximizar sua performance atlética.</p>
+                <p id="preco">Preço: $89.99</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="Hipercalórico em pó - Furious gym.png" alt="Produto 2">
+            <div class="card-content">
+                <h2>Hipercalórico <br> FURIOUS GYM</h2>
+                <p>Transforme seus objetivos de ganho de massa em realidade com o Hipercalórico em Pó Furious Gym. Uma explosão de calorias.</p>
+                <p id="preco">Preço: $90.50</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+
+         <!-- Card 3 -->
+         <div class="card">
+            <img src="WHEY protein - Furious gym.png" alt="Produto 1">
+            <div class="card-content">
+                <h2>WHEY protein 100%<br> FURIOUS GYM</h2>
+                <p>Experimente a revolução nutricional com o Whey Protein Furious Gym. Enriquecido com proteínas de alta qualidade.</p>
+                <p id="preco">Preço: $105.00</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+
+
+        <center><img src="SLOGANR - Furious gym.png" id="slogan"></center>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="Camisa Dry Fit - Furious gym.png" alt="Produto 2">
+            <div class="card-contentca">
+                <h2>Camisa Dry Fit <br> FURIOUS GYM</h2>
+                <p>Elevando o conforto e estilo nos seus treinos, apresentamos a Camiseta Dry Fit Furious Gym. Desenvolvida para acompanhar cada movimento, esta peça essencial combina tecidos respiráveis e tecnologia Dry Fit. Tenha um treino confortável!</p>
+                <p id="preco">Preço: $69.99</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+
+         <!-- Card 6 -->
+         <div class="card">
+            <img src="Camisa de compressão - Furious gym.png" alt="Produto 1">
+            <div class="card-contentca">
+                <h2>Camisa de compressão <br> FURIOUS GYM</h2>
+                <p>Potencialize seu treino com a Camiseta de Compressão Furious Gym. Projetada para oferecer suporte muscular estratégico, esta peça é mais do que uma vestimenta, é uma ferramenta essencial para maximizar seu desempenho!</p>
+                <p id="preco">Preço: $80.00</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+            <img src="Regata para academia - Furious gym.png" alt="Produto 2">
+            <div class="card-contentca">
+                <h2>Regata para academia <br> FURIOUS GYM</h2>
+                <p>Liberte sua performance com a Regata para Academia Furious Gym. Projetada para máxima liberdade de movimento, esta peça é essencial para seus treinos intensos. Tecido leve e respirável, combinado com um design moderno!</p>
+                <p id="preco">Preço: $65.50</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+            <img src="Coqueteira - furious gym.png" alt="Produto 2">
+            <div class="card-contentca">
+                <h2>Coqueteira <br> FURIOUS GYM</h2>
+                <p>Eleve seus shakes e suplementos a um novo patamar com a Coqueteira Furious Gym. Desenvolvida para atender às necessidades dos atletas exigentes, é a parceira perfeita para misturar seus shakes de proteína, pré-treinos e suplementos favoritos!</p>
+                <p id="preco">Preço: $40.80</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+
+        
+        
+    </main>
+
+<center><img src="Sobre a furious gym.png" id="imgsobre"></center>
+<center><p id="textosobre">A Furious Gym é uma marca de suplementos alimentares com foco em atletas de alta performance. 
+    Nós produzimos produtos de alta qualidade, visando seu bem estar dentro e fora da academia. Criada dia 25 de Janeiro de 2024, a empresa Furious gym entrega o melhor para o atleta de musculação.</p></center>
+    <footer>
+        <p>&copy; Matheus Abner 2024 Furious gym. Todos os direitos reservados.<br> Uma empresa voltada à fabricação e ao fornecimento de produtos suplementares.</p>
+    </footer>
+
+</body>
+</html>
